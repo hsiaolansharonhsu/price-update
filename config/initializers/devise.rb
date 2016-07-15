@@ -6,7 +6,8 @@ Devise.setup do |config|
   # confirmation, reset password and unlock tokens in the database.
   # Devise will use the `secret_key_base` as its `secret_key`
   # by default. You can change it below and use your own secret key.
-  # config.secret_key = 'c994d3690347a284eed00b29f39356863ed8477c2f6247656966c33b21a1c9da35d19ff635241e8a2dfc9d7da0b55313fb053d0b37e819a689510800e87bcce6'
+  # config.secret_key = '
+  # c994d3690347a284eed00b29f39356863ed8477c2f6247656966c33b21a1c9da35d19ff635241e8a2dfc9d7da0b55313fb053d0b37e819a689510800e87bcce6'
 
   # ==> Mailer Configuration
   # Configure the e-mail address which will be shown in Devise::Mailer,
@@ -39,8 +40,10 @@ Devise.setup do |config|
   # Configure parameters from the request object used for authentication. Each entry
   # given should be a request method and it will automatically be passed to the
   # find_for_authentication method and considered in your model lookup. For instance,
-  # if you set :request_keys to [:subdomain], :subdomain will be used on authentication.
-  # The same considerations mentioned for authentication_keys also apply to request_keys.
+  # if you set :request_keys to [:subdomain], :subdomain will be used on
+  # authentication.
+  # The same considerations mentioned for authentication_keys also apply to r
+  # equest_keys.
   # config.request_keys = []
 
   # Configure which authentication keys should be case-insensitive.
@@ -63,7 +66,8 @@ Devise.setup do |config|
   # It can be set to an array that will enable http authentication only for the
   # given strategies, for example, `config.http_authenticatable = [:database]` will
   # enable it only for database authentication. The supported strategies are:
-  # :database      = Support basic authentication with authentication key + password
+  # :database      = Support basic authentication with authentication
+  # key + password
   # config.http_authenticatable = false
 
   # If 401 status code should be returned for AJAX requests. True by default.
@@ -108,7 +112,8 @@ Devise.setup do |config|
   config.stretches = Rails.env.test? ? 1 : 11
 
   # Set up a pepper to generate the hashed password.
-  # config.pepper = 'ce45e500a874c4985a17d5282709e910de79edc4e5cc6081b1c89acd46a4ab11f843bd88e872a3fe509a2b560c7222b943cd574fed6f1094cdce29c7c978dfbe'
+  # config.pepper = '
+  # ce45e500a874c4985a17d5282709e910de79edc4e5cc6081b1c89acd46a4ab11f843bd88e872a3fe509a2b560c7222b943cd574fed6f1094cdce29c7c978dfbe'
 
   # Send a notification email when the user's password is changed
   # config.send_password_change_notification = false
@@ -130,9 +135,11 @@ Devise.setup do |config|
   # config.confirm_within = 3.days
 
   # If true, requires any email changes to be confirmed (exactly the same way as
-  # initial account confirmation) to be applied. Requires additional unconfirmed_email
+  # initial account confirmation) to be applied. Requires additional
+  # unconfirmed_email
   # db field (see migrations). Until confirmed, new email is stored in
-  # unconfirmed_email column, and copied to email column on successful confirmation.
+  # unconfirmed_email column, and copied to email column on successful
+  # confirmation.
   config.reconfirmable = true
 
   # Defines which key will be used when confirming an account
@@ -168,7 +175,8 @@ Devise.setup do |config|
 
   # ==> Configuration for :lockable
   # Defines which strategy will be used to lock an account.
-  # :failed_attempts = Locks an account after a number of failed attempts to sign in.
+  # :failed_attempts = Locks an account after a number of failed
+  # attempts to sign in.
   # :none            = No lock strategy. You should handle locking by yourself.
   # config.lock_strategy = :failed_attempts
 
@@ -202,12 +210,14 @@ Devise.setup do |config|
   # change their passwords.
   config.reset_password_within = 6.hours
 
-  # When set to false, does not sign a user in automatically after their password is
-  # reset. Defaults to true, so a user is signed in automatically after a reset.
+  # When set to false, does not sign a user in automatically after their
+  # password is reset. Defaults to true, so a user is signed in
+  # automatically after a reset.
   # config.sign_in_after_reset_password = true
 
   # ==> Configuration for :encryptable
-  # Allow you to use another hashing or encryption algorithm besides bcrypt (default).
+  # Allow you to use another hashing or encryption algorithm besides bcrypt
+  # (default).
   # You can use :sha1, :sha512 or algorithms from others authentication tools as
   # :clearance_sha1, :authlogic_sha512 (then you should set stretches above to 20
   # for default behavior) and :restful_authentication_sha1 (then you should set
