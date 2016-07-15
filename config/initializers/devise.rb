@@ -6,8 +6,9 @@ Devise.setup do |config|
   # confirmation, reset password and unlock tokens in the database.
   # Devise will use the `secret_key_base` as its `secret_key`
   # by default. You can change it below and use your own secret key.
-  # config.secret_key = '
-  # c994d3690347a284eed00b29f39356863ed8477c2f6247656966c33b21a1c9da35d19ff635241e8a2dfc9d7da0b55313fb053d0b37e819a689510800e87bcce6'
+  # config.secret_key = 'c994d3690347a284eed00b29f39356863ed8477c2f_
+  # 6247656966c33b21a1c9da35d19ff635241e8a2dfc9d7da0b55313fb053d0b_
+  # 37e819a689510800e87bcce6'
 
   # ==> Mailer Configuration
   # Configure the e-mail address which will be shown in Devise::Mailer,
@@ -49,8 +50,8 @@ Devise.setup do |config|
   # config.request_keys = []
 
   # Configure which authentication keys should be case-insensitive.
-  # These keys will be downcased upon creating or modifying a user and when used
-  # to authenticate or find a user. Default is :email.
+  # These keys will be downcased upon creating or modifying a user and when
+  # used to authenticate or find a user. Default is :email.
   config.case_insensitive_keys = [:email]
 
   # Configure which authentication keys should have whitespace stripped.
@@ -60,8 +61,8 @@ Devise.setup do |config|
   config.strip_whitespace_keys = [:email]
 
   # Tell if authentication through request.params is enabled. True by default.
-  # It can be set to an array that will enable params authentication only for the
-  # given strategies, for example, `config.params_authenticatable =
+  # It can be set to an array that will enable params authentication only for
+  # the given strategies, for example, `config.params_authenticatable =
   # [:database]` will enable it only for database (email + password)
   # authentication.
   # config.params_authenticatable = true
@@ -108,16 +109,18 @@ Devise.setup do |config|
   # For bcrypt, this is the cost for hashing the password and defaults to 11. If
   # using other algorithms, it sets how many times you want the password to
   # be hashed.
-  # Limiting the stretches to just one in testing will increase the performance of
-  # your test suite dramatically. However, it is STRONGLY RECOMMENDED to not use
-  # a value less than 10 in other environments. Note that, for bcrypt (the default
-  # algorithm), the cost increases exponentially with the number of stretches (e.g.
-  # a value of 20 is already extremely slow: approx. 60 seconds for 1 calculation).
+  # Limiting the stretches to just one in testing will increase the performance
+  # of your test suite dramatically. However, it is STRONGLY RECOMMENDED to
+  # not use a value less than 10 in other environments. Note that, for bcrypt
+  # (the default algorithm), the cost increases exponentially with the number
+  # of stretches (e.g. a value of 20 is already extremely slow: approx. 60
+  # seconds for 1 calculation).
   config.stretches = Rails.env.test? ? 1 : 11
 
   # Set up a pepper to generate the hashed password.
-  # config.pepper = '
-  # ce45e500a874c4985a17d5282709e910de79edc4e5cc6081b1c89acd46a4ab11f843bd88e872a3fe509a2b560c7222b943cd574fed6f1094cdce29c7c978dfbe'
+  # config.pepper = 'ce45e500a874c4985a17d5282709e910de79edc4e5_
+  # cc6081b1c89acd46a4ab11f843bd88e872a3fe509a2b560c7222b943cd574_
+  # fed6f1094cdce29c7c978dfbe'
 
   # Send a notification email when the user's password is changed
   # config.send_password_change_notification = false
@@ -224,10 +227,9 @@ Devise.setup do |config|
   # Allow you to use another hashing or encryption algorithm besides bcrypt
   # (default).
   # You can use :sha1, :sha512 or algorithms from others authentication tools as
-  # :clearance_sha1, :authlogic_sha512 (then you should set stretches above to 20
-  # for default behavior) and :restful_authentication_sha1 (then you should set
-  # stretches to 10, and copy REST_AUTH_SITE_KEY to pepper).
-  #
+  # :clearance_sha1, :authlogic_sha512 (then you should set stretches above to
+  # 20 for default behavior) and :restful_authentication_sha1 (then you should
+  # set stretches to 10, and copy REST_AUTH_SITE_KEY to pepper).
   # Require the `devise-encryptable` gem when using anything other than bcrypt
   # config.encryptor = :sha512
 
@@ -274,8 +276,9 @@ Devise.setup do |config|
   # end
 
   # ==> Mountable engine configurations
-  # When using Devise inside an engine, let's call it `MyEngine`, and this engine
-  # is mountable, there are some extra configurations to be taken into account.
+  # When using Devise inside an engine, let's call it `MyEngine`, and this
+  # engine is mountable, there are some extra configurations to be taken into
+  # account.
   # The following options are available, assuming the engine is mounted as:
   #
   #     mount MyEngine, at: '/my_engine'
