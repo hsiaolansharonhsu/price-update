@@ -34,6 +34,7 @@ Devise.setup do |config|
   # just :email. You can configure it to use [:username, :subdomain], so for
   # authenticating a user, both parameters are required. Remember that those
   # parameters are used only when authenticating and not when retrieving from
+
   # session. If you need permissions, you should implement that in a
   # before filter.
   # You can also supply a hash where the value is a boolean determining whether
@@ -192,6 +193,7 @@ Devise.setup do |config|
 
   # Defines which strategy will be used to unlock an account.
   # :email = Sends an unlock link to the user email
+
   # :time  = Re-enables login after a certain amount of time (see
   # :unlock_in below)
   # :both  = Enables both strategies
@@ -217,7 +219,6 @@ Devise.setup do |config|
   # Don't put a too small interval or your users won't have the time to
   # change their passwords.
   config.reset_password_within = 6.hours
-
   # When set to false, does not sign a user in automatically after their
   # password is reset. Defaults to true, so a user is signed in
   # automatically after a reset.
