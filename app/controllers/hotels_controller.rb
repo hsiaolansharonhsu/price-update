@@ -1,8 +1,9 @@
+# define hotel CRUD
 class HotelsController < ApplicationController
   before_action :authenticate_user!, except: [:index, :show]
 
   def index
-      @hotel = Hotel.new
+    @hotel = Hotel.new
   end
 
   # def new

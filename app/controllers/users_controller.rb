@@ -1,3 +1,4 @@
+#define user CRUD
 class UsersController < ApplicationController
   def index
     @users = User.all
