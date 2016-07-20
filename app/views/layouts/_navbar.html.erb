@@ -1,0 +1,20 @@
+<nav class="top-bar" data-topbar role="navigation" data-options="sticky_on: large">
+  <div clas="row">
+    <div class="small-9 columns sign-nav">
+      <% if user_signed_in? %>
+        <%= link_to("Sign Out", destroy_user_session_path, method: :delete,
+          class: "sign-links user-signs") %>
+        <% if current_user.admin? %>
+          <%= link_to("Admin Section", admin_users_path,
+          class: "sign-links user-signs") %>
+        <% end %>
+      <% else %>
+        <%= link_to("Sign Up", new_user_registration_path,
+          class: "sign-links user-signs") %>
+        <%= link_to("Sign In", new_user_session_path,
+          class: "sign-links user-signs") %>
+      <% end %>
+      <%= link_to("Home", root_path, class: "sign-links user-signs right-side") %>
+    </div>
+  </div>
+</nav>

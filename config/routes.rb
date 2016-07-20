@@ -1,9 +1,13 @@
 Rails.application.routes.draw do
-  # root 'hotels#index"
+  # resources :hotels, only: [:index]
   devise_for :users, controllers: {
-    registrations: 'users/registrations',
-    sessions: 'users/sessions'
+    registrations: "users/registrations",
+    sessions: "users/sessions"
   }
-  # resources :hotels
-  # resources :users
+  root "users#index"
+
+  # namespace :admin do
+  #   resources :hotels
+  resources :users, only: [:index, :show, :destroy]
+  # end
 end
