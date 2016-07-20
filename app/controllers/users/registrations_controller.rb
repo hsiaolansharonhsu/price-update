@@ -1,4 +1,4 @@
-#define user sign up CRUD
+# define user sign up CRUD
 class Users::RegistrationsController < Devise::RegistrationsController
   def new
     @user = User.new
