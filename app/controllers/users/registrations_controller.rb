@@ -6,7 +6,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
   def create
     @user = User.new(user_signup_params)
     if @user.save
-      redirect_to @user, notice: "You have successfully signed up!"
+      redirect_to @user, notice: 'You have successfully signed up!'
     else
       render :new
     end
